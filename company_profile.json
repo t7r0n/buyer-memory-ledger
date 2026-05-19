@@ -1,0 +1,49 @@
+{
+  "company": "DealFlowAgent",
+  "company_slug": "dealflowagent",
+  "repo": "buyer-memory-ledger",
+  "package": "buyer_memory_ledger",
+  "cli": "buyer-memory-ledger",
+  "title": "Buyer Memory Ledger",
+  "problem": "AI-native SME M&A depends on remembering buyer preferences, deal structures, and owner constraints without creating a black-box matching process.",
+  "direction": "A buyer-preference memory and explainability ledger that replays synthetic sell-side mandates against acquirer criteria, explains why buyers were ranked, and detects stale or contradictory buyer memory.",
+  "why": "DealFlowAgent publicly emphasizes conversational AI matchmaking and memory of buyer preferences. The project turns that claim into an auditable matching artifact Joe can inspect deal by deal.",
+  "terms": [
+    "ai-native",
+    "depends",
+    "remembering",
+    "buyer",
+    "preferences",
+    "structures",
+    "owner",
+    "constraints",
+    "creating",
+    "black-box",
+    "matching",
+    "process",
+    "buyer-preference",
+    "memory",
+    "explainability",
+    "ledger",
+    "replays",
+    "synthetic"
+  ],
+  "metrics": [
+    "ai-native_coverage",
+    "depends_risk",
+    "remembering_precision",
+    "buyer_latency"
+  ],
+  "failure_modes": [
+    "ai-native_drift",
+    "depends_gap",
+    "remembering_misroute",
+    "buyer_blindspot"
+  ],
+  "sources": [
+    "https://www.dealflowagent.com/about",
+    "https://www.dealflowagent.com/partnerships",
+    "https://www.eu-startups.com/2026/03/dealflowagent-raises-e646-2k-led-by-early-uber-and-spacex-backer-to-scale-ai-native-investment-bank-for-sme-ma/"
+  ],
+  "github_url": "https://github.com/t7r0n/buyer-memory-ledger"
+}

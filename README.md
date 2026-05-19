@@ -1,0 +1,43 @@
+# Buyer Memory Ledger
+
+A buyer-preference memory and explainability ledger that replays synthetic sell-side mandates against acquirer criteria, explains why buyers were ranked, and detects stale or contradictory buyer memory.
+
+## Why This Exists
+
+AI-native SME M&A depends on remembering buyer preferences, deal structures, and owner constraints without creating a black-box matching process.
+
+## What It Builds
+
+- Replays synthetic `ai-native` and `depends` cases against the project's evidence rules.
+- Scores `ai-native_coverage`, `depends_risk`, and `remembering_precision` so regressions are visible in CSV and JSON.
+- Plants `ai-native drift` and `depends gap` failures as negative controls.
+- Writes citation-locked decision claims; unsupported claims fail verification.
+- Exports a review dashboard and demo pack for `buyer-memory-ledger` without hosted services.
+
+## Local Run
+
+```bash
+uv sync
+uv run buyer-memory-ledger all
+uv run pytest -q
+uv run ruff check .
+```
+
+## Outputs
+
+- `outputs/analysis.json`
+- `outputs/scenario_report.csv`
+- `outputs/decision_report.md`
+- `outputs/evidence_packet.md`
+- `outputs/dashboard.html`
+- `outputs/demo_pack.zip`
+
+## Sources
+
+- https://www.dealflowagent.com/about
+- https://www.dealflowagent.com/partnerships
+- https://www.eu-startups.com/2026/03/dealflowagent-raises-e646-2k-led-by-early-uber-and-spacex-backer-to-scale-ai-native-investment-bank-for-sme-ma/
+
+## Boundary
+
+This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.

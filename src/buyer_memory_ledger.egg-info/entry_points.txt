@@ -1,0 +1,2 @@
+[console_scripts]
+buyer-memory-ledger = buyer_memory_ledger.cli:main

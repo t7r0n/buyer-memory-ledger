@@ -1,0 +1,18 @@
+{
+  "company": "DealFlowAgent",
+  "repo": "buyer-memory-ledger",
+  "metrics": [
+    "ai-native_coverage",
+    "depends_risk",
+    "remembering_precision",
+    "buyer_latency"
+  ],
+  "failure_modes": [
+    "ai-native_drift",
+    "depends_gap",
+    "remembering_misroute",
+    "buyer_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
