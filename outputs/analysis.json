@@ -9,74 +9,54 @@
   },
   "clusters": [
     {
-      "scenario": "ai-native drift",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 2.5,
-      "mean_score": 0.3948,
-      "top_evidence_id": "ev_0088",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "ai-native evidence recall",
-      "cases": 24,
-      "blocks": 3,
-      "reviews": 3,
-      "mean_severity": 1.875,
-      "mean_score": 0.2958,
-      "top_evidence_id": "ev_0000",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "buyer policy boundary",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 3,
-      "mean_severity": 1.708,
-      "mean_score": 0.2673,
-      "top_evidence_id": "ev_0099",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "depends gap",
-      "cases": 24,
-      "blocks": 3,
-      "reviews": 2,
-      "mean_severity": 3.333,
-      "mean_score": 0.5402,
-      "top_evidence_id": "ev_0143",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "depends reviewer handoff",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 2.583,
-      "mean_score": 0.3909,
-      "top_evidence_id": "ev_0121",
-      "recommended_action": "block release until replay is understood"
-    },
-    {
-      "scenario": "remembering failure replay",
-      "cases": 24,
-      "blocks": 2,
-      "reviews": 4,
-      "mean_severity": 3.333,
-      "mean_score": 0.5004,
+      "scenario": "ai-native evidence replay",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.611,
+      "mean_score": 0.4021,
       "top_evidence_id": "ev_0044",
-      "recommended_action": "block release until replay is understood"
+      "recommended_action": "block release until cited evidence is regenerated"
+    },
+    {
+      "scenario": "buyer operator packet",
+      "cases": 36,
+      "blocks": 4,
+      "reviews": 5,
+      "mean_severity": 2.556,
+      "mean_score": 0.3943,
+      "top_evidence_id": "ev_0099",
+      "recommended_action": "accept only if decision claims cite fixture evidence"
+    },
+    {
+      "scenario": "depends boundary probe",
+      "cases": 36,
+      "blocks": 3,
+      "reviews": 4,
+      "mean_severity": 2.528,
+      "mean_score": 0.4085,
+      "top_evidence_id": "ev_0121",
+      "recommended_action": "route to reviewer with evidence packet"
+    },
+    {
+      "scenario": "remembering regression harness",
+      "cases": 36,
+      "blocks": 3,
+      "reviews": 5,
+      "mean_severity": 2.528,
+      "mean_score": 0.4007,
+      "top_evidence_id": "ev_0110",
+      "recommended_action": "open a regression issue with trace and benchmark delta"
     }
   ],
   "highest_risk": {
-    "scenario": "depends gap",
-    "cases": 24,
-    "blocks": 3,
-    "reviews": 2,
-    "mean_severity": 3.333,
-    "mean_score": 0.5402,
-    "top_evidence_id": "ev_0143",
-    "recommended_action": "block release until replay is understood"
+    "scenario": "ai-native evidence replay",
+    "cases": 36,
+    "blocks": 4,
+    "reviews": 5,
+    "mean_severity": 2.611,
+    "mean_score": 0.4021,
+    "top_evidence_id": "ev_0044",
+    "recommended_action": "block release until cited evidence is regenerated"
   }
 }

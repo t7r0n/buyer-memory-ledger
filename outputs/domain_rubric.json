@@ -1,0 +1,61 @@
+{
+  "repo": "buyer-memory-ledger",
+  "company": "DealFlowAgent",
+  "rubric_axes": [
+    {
+      "axis": "ai-native_coverage",
+      "failures": [
+        "ai-native_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "depends_risk",
+      "failures": [
+        "depends_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "remembering_precision",
+      "failures": [
+        "remembering_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "buyer_latency",
+      "failures": [
+        "buyer_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "ai-native evidence replay",
+      "trigger": "ai-native signal changes while depends context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "depends boundary probe",
+      "trigger": "depends handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "remembering regression harness",
+      "trigger": "remembering behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "buyer operator packet",
+      "trigger": "buyer output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.dealflowagent.com/about",
+    "https://www.dealflowagent.com/partnerships",
+    "https://www.eu-startups.com/2026/03/dealflowagent-raises-e646-2k-led-by-early-uber-and-spacex-backer-to-scale-ai-native-investment-bank-for-sme-ma/"
+  ]
+}

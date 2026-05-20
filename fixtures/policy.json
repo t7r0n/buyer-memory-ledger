@@ -13,6 +13,28 @@
     "remembering_misroute",
     "buyer_blindspot"
   ],
+  "domain_archetypes": [
+    {
+      "name": "ai-native evidence replay",
+      "trigger": "ai-native signal changes while depends context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "depends boundary probe",
+      "trigger": "depends handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "remembering regression harness",
+      "trigger": "remembering behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "buyer operator packet",
+      "trigger": "buyer output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "minimum_cases": 144,
   "requires_evidence_markers": true
 }
