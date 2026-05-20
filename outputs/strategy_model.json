@@ -1,0 +1,69 @@
+{
+  "company": "DealFlowAgent",
+  "repo": "buyer-memory-ledger",
+  "terms": [
+    "ai-native",
+    "depends",
+    "remembering",
+    "buyer",
+    "preferences",
+    "structures",
+    "owner",
+    "constraints"
+  ],
+  "metrics": [
+    "ai-native_coverage",
+    "depends_risk",
+    "remembering_precision",
+    "buyer_latency"
+  ],
+  "failure_modes": [
+    "ai-native_drift",
+    "depends_gap",
+    "remembering_misroute",
+    "buyer_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "ai-native evidence replay",
+      "metric": "ai-native_coverage",
+      "failure_mode": "ai-native_drift",
+      "evidence": "ev_0044",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "buyer operator packet",
+      "metric": "depends_risk",
+      "failure_mode": "depends_gap",
+      "evidence": "ev_0099",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "remembering regression harness",
+      "metric": "remembering_precision",
+      "failure_mode": "remembering_misroute",
+      "evidence": "ev_0110",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "depends boundary probe",
+      "metric": "buyer_latency",
+      "failure_mode": "buyer_blindspot",
+      "evidence": "ev_0121",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "DealFlowAgent gets a local, deterministic pressure test around ai-native, depends, and remembering. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}
