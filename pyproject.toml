@@ -1,7 +1,7 @@
 [project]
 name = "buyer-memory-ledger"
 version = "0.1.0"
-description = "A buyer-preference memory and explainability ledger that replays synthetic sell-side mandates against acquirer criteria, explains why buyers"
+description = "A buyer-preference memory and explainability ledger that replays synthetic sell-side mandates against acquirer criteria,"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [

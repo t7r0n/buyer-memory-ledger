@@ -1,13 +1,13 @@
-# Operator Brief: DealFlowAgent
+# Operator Brief: Buyer Memory Ledger
 
-DealFlowAgent gets a local, deterministic pressure test around ai-native, depends, and remembering. The useful part is the repeatable evidence path from fixture to failure to operator action.
+This local harness runs a deterministic pressure test around evidence, workflow, and review. The useful part is the repeatable evidence path from fixture to failure to operator action.
 
 ## Highest-leverage checks
 
-- ai-native evidence replay -> block release until cited evidence is regenerated (ai-native_coverage, evidence ev_0044).
-- buyer operator packet -> accept only if decision claims cite fixture evidence (depends_risk, evidence ev_0099).
-- remembering regression harness -> open a regression issue with trace and benchmark delta (remembering_precision, evidence ev_0110).
-- depends boundary probe -> route to reviewer with evidence packet (buyer_latency, evidence ev_0121).
+- evidence replay -> block release until cited evidence is regenerated (evidence_coverage, evidence ev_0132).
+- review operator packet -> accept only if decision claims cite fixture evidence (handoff_risk, evidence ev_0099).
+- claim regression harness -> open a regression issue with trace and benchmark delta (claim_precision, evidence ev_0022).
+- handoff boundary probe -> route to reviewer with evidence packet (review_latency, evidence ev_0077).
 
 ## What makes this useful
 

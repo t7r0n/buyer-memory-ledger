@@ -53,12 +53,6 @@ uv run ruff check .
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
-## Sources
-
-- https://www.dealflowagent.com/about
-- https://www.dealflowagent.com/partnerships
-- https://www.eu-startups.com/2026/03/dealflowagent-raises-e646-2k-led-by-early-uber-and-spacex-backer-to-scale-ai-native-investment-bank-for-sme-ma/
-
 ## Boundary
 
 Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.

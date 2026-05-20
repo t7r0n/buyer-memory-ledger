@@ -1,71 +1,61 @@
 {
-  "company": "DealFlowAgent",
-  "company_slug": "dealflowagent",
+  "company": "Buyer Memory Ledger",
+  "company_slug": "buyer-memory-ledger",
   "repo": "buyer-memory-ledger",
   "package": "buyer_memory_ledger",
   "cli": "buyer-memory-ledger",
   "title": "Buyer Memory Ledger",
   "problem": "AI-native SME M&A depends on remembering buyer preferences, deal structures, and owner constraints without creating a black-box matching process.",
   "direction": "A buyer-preference memory and explainability ledger that replays synthetic sell-side mandates against acquirer criteria, explains why buyers were ranked, and detects stale or contradictory buyer memory.",
-  "why": "DealFlowAgent publicly emphasizes conversational AI matchmaking and memory of buyer preferences. The project turns that claim into an auditable matching artifact Joe can inspect deal by deal.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "ai-native",
-    "depends",
-    "remembering",
-    "buyer",
-    "preferences",
-    "structures",
-    "owner",
-    "constraints",
-    "creating",
-    "black-box",
-    "matching",
-    "process",
-    "buyer-preference",
-    "memory",
-    "explainability",
-    "ledger",
-    "replays",
-    "synthetic"
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
+    "coverage",
+    "latency"
   ],
   "metrics": [
-    "ai-native_coverage",
-    "depends_risk",
-    "remembering_precision",
-    "buyer_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "ai-native_drift",
-    "depends_gap",
-    "remembering_misroute",
-    "buyer_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "ai-native evidence replay",
-      "trigger": "ai-native signal changes while depends context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "depends boundary probe",
-      "trigger": "depends handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "remembering regression harness",
-      "trigger": "remembering behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "buyer operator packet",
-      "trigger": "buyer output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.dealflowagent.com/about",
-    "https://www.dealflowagent.com/partnerships",
-    "https://www.eu-startups.com/2026/03/dealflowagent-raises-e646-2k-led-by-early-uber-and-spacex-backer-to-scale-ai-native-investment-bank-for-sme-ma/"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/buyer-memory-ledger"
 }
